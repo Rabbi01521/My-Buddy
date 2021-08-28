@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Random Buddy</title>
+    <!-- bootstrap css  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- icon bootstrap  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <style>
+      li:hover .bi {
+        color: rgb(69, 241, 170);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center my-4">My Random Buddy</h1>
+    <div id="card" class="card w-50 mx-auto">
+      <div class="mx-auto">
+        <img
+          src="https://randomuser.me/api/portraits/men/75.jpg"
+          class="img-fluid rounded-circle my-4 border border-2"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- innertext part -->
+    <div class="mx-auto">
+      <p id="info" class="text-center my-3">Hi, My name is</p>
+      <h1 id="detail" class="text-center my-3">Mr Marcus Johansen</h1>
+    </div>
+    <!-- icon part -->
+    <div id="icon" class="my-3 w-50 mx-auto">
+      <ul class="list-group list-group-horizontal mx-4">
+        <li id="user-name" class="list-group-item mx-3">
+          <i class="bi bi-person-bounding-box fs-1"></i>
+        </li>
+        <li id="user-email" class="list-group-item mx-3">
+          <i class="bi bi-envelope-fill fs-1"></i>
+        </li>
+        <li id="user-birth" class="list-group-item mx-3">
+          <i class="bi bi-calendar-event fs-1"></i>
+        </li>
+        <li id="user-location" class="list-group-item mx-3">
+          <i class="bi bi-pin-map-fill fs-1"></i>
+        </li>
+        <li id="user-telephone" class="list-group-item mx-3">
+          <i class="bi bi-telephone fs-1"></i>
+        </li>
+        <li id="user-password" class="list-group-item mx-3">
+          <i class="bi bi-shield-lock fs-1"></i>
+        </li>
+      </ul>
+    </div>
+
+    <div class="d-grid col-6 mx-auto">
+      <button
+        onclick="loadBuddy()"
+        type="button"
+        class="btn btn-info fw-bold text-white my-3"
+      >
+        Next
+      </button>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
